@@ -1,0 +1,65 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>csspositioning
+
+
+    </title>
+    <style>
+        .fixed {
+            width: 250px;
+            height: 250px;
+            background: red;
+            position: fixed;
+            bottom: 40px;
+            right: 70px;
+        }
+        .sticky{
+            width: 250px;
+            height: 250px;
+            background: red;
+            position: sticky;
+            top: 20px;
+        }
+
+        .relative {
+            width: 500px;
+            height: 1500px;
+            background: #ff00dd;
+            position: relative;
+            margin: 2px;
+        }
+        .absolute {
+            width: 100px;
+            height: 100px;
+            background: rgb(25, 0, 255);
+            position: absolute;
+            bottom: 40px;
+            right: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- fixed -->
+    <div class="fixed">
+           <!-- absolute -->
+           <div class="absolute"></div>
+    </div>
+
+    <!-- relative -->
+    <div class="relative">
+    </div>
+ 
+        <!-- sticky -->
+        <div class="relative">
+            <div class="sticky">f1</div>
+            <!-- absolute -->
+            <div class="absolute"></div>
+    </div>
+       <!-- absolute -->
+       <div class="absolute"></div>
+</body>
+
+</html>
